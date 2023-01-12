@@ -23,7 +23,7 @@ const [id,setId]= useState("")
  return (
     <>
       <GlobalStyle/>
-      <Header />
+      <Header id={id} setId={setId}/>
       <ProdutosCard itens={itens}/>
     </>
 
