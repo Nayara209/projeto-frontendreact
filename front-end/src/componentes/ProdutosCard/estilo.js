@@ -18,7 +18,7 @@
  flex-direction: column;
  height: 62vh;
  border-radius: 1px;
- box-shadow: 0.1em 0.1em 0.4em gray;
+ box-shadow: 0.2em 0.2em 0.4em black;
  `;
 
 export const ProdutosNumber = styled.p`

@@ -8,6 +8,6 @@ export const Botao = styled.button`
     margin-top: 5px;
     font-size:larger;
     font-weight: bolder;
-    box-shadow: 0.1em 0.1em 0.4em gray;
+    box-shadow: 0.1em 0.1em 0.4em purple;
     cursor: pointer;
 `

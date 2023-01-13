@@ -3,29 +3,29 @@ import Button from "../Button/Button.js"
  import { Container, ContainerPrincipal, ProdutoImg, ProdutosNome, ProdutosNumber,ProdutosValor } from "./estilo.js"
  
  
- const ProdutosCard = ({itens}) => {
+ const ProdutosCard = (props) => {
      
      return (
          <ContainerPrincipal>
 
-                {itens.map(itens =>(
+                {/* {itens.map(itens =>( */}
                <Container >
 
-                     <ProdutosNumber> {itens.id} </ProdutosNumber>
+                     <ProdutosNumber> {props.pro.id} </ProdutosNumber>
 
-                     <ProdutosNome>{itens.name}</ProdutosNome>
+                     <ProdutosNome>{props.pro.name}</ProdutosNome>
 
-                     <ProdutoImg src={itens.img} />
+                     <ProdutoImg src={props.pro.img} />
 
-                     <ProdutosValor>R$ {itens.valor} </ProdutosValor>
+                     <ProdutosValor>R$ {props.pro.valor} </ProdutosValor>
                      <Button/>
                 </Container>
                 
-          ))}
+          {/* ))} */}
           
    </ContainerPrincipal>
    
     )
 }
-<Button/>
+
 export default ProdutosCard
