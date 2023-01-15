@@ -7,8 +7,6 @@ import Button from "../Button/Button.js"
      
      return (
          <ContainerPrincipal>
-
-                {/* {itens.map(itens =>( */}
                <Container >
 
                      <ProdutosNumber> {props.pro.id} </ProdutosNumber>
@@ -18,10 +16,11 @@ import Button from "../Button/Button.js"
                      <ProdutoImg src={props.pro.img} />
 
                      <ProdutosValor>R$ {props.pro.valor} </ProdutosValor>
-                     <Button/>
+                  
+                    <Button/> 
                 </Container>
                 
-          {/* ))} */}
+        
           
    </ContainerPrincipal>
    

@@ -4,12 +4,12 @@ import { Botao } from "./estilo.js";
 
 const Button = () => {
 
-    function adicionaCarrinho() {
+    function adicionaCarrinho(props) {
         alert('Item Adicionado')
     }
 
     return (
-        <Botao onClick="">Adicionar</Botao>
+        <Botao onClick={()=>adicionaCarrinho()}>Adicionar</Botao>
     )
 }
 

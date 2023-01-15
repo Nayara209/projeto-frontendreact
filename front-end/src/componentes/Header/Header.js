@@ -24,20 +24,24 @@ const Header = (props) => {
                 <input
                     type="text"
                     placeholder="Buscar por nome"
-                // onChange={onChangeBuscaNome}
-                // value={props.buscaNome}
-                /> <select >
+                    value={props.name}
+                    onChange={(ev)=> {props.setName(ev.target.value)}}
+                   
+                /> 
+                 {/* <input
+                    type="number"
+                    placeholder="Buscar por valor"
+                    value={props.valor}
+                    onChange={(ev)=> {props.setValor(ev.target.value)}}
+                   
+                    
+                />
+                <select onChange={(ev)=>{props.setOrdenar(ev.target.value)}} >
                     <option value="">Ordenar</option>
                     <option value="crescente">Crescente</option>
                     <option value="decrescente">Decrescente</option>
-                </select>
-                <input
-                    type="number"
-                    placeholder="Buscar por valor"
-                // onChange={onChangeBuscaValor}
-                // value={props.buscaValor}
-
-                />
+                </select> */}
+               
 
             </Container>}
 
@@ -53,8 +57,6 @@ const Header = (props) => {
 
                 </Lista>
             </TerceiroElemento>
-
-
         </header >
     )
 }

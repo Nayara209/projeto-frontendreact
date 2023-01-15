@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-
+import styled from "styled-components";
 export const GlobalStyle = createGlobalStyle`
   * {
       box-sizing: border-box;
@@ -8,3 +8,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 `
 
+export const CardCar = styled.div`
+width: 20vw;
+height: 10vh
+
+`
